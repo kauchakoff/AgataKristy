@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Произведения</title>
+
+    <link rel="stylesheet" href="Style/books.css">
+    <script src="JavaScript/up_button.js"></script>
+    
+    <link rel="icon" type="image/png" href="images/logo_black.png">
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+            <div>
+                <ul>
+                    <li><a href="bio.html">Биография</a></li>
+                    <li><a href="books.html">Произведения</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="films.html">Экранизации</a></li>
+                    <li><a href="quotes.html">Цитаты</a></li>
+                    <li><a href="facts.html">Интересные факты</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="sources.html">Источники</a></li>
+                </ul>
+            </div> 
+        </div>
+        <hr>
+    </header>
+    <main>
+
+        <h1>Произведения</h1>
+        <h2 id="romans">Романы</h2>
+        <div class="main_div">
+
+            <div class="book" onclick="openOverlay1()">
+                <img src="images/загадочное проиществие в стайлзе.jpg" class="for_cursor">
+                <p>Загадочное происшествие в Стайлзе (1920)</p>
+            </div>
+            
+            <div id="overlay-1" class="overlay">
+
+                <div class="annotation">
+                    <span class="close" onclick="closeOverlay1()">&times;</span>
+                    <p>
+                        "Загадочное происшествие в Стайлзе" – это самый первый роман Агаты Кристи. В этой книге, вышедшей в 1920 году, читатель в первый раз встречается с самым знаменитым сыщиком XX столетия - усатым бельгийцем Эркюлем Пуаро, а также с его другом и помощником Гастингсом. Именно здесь Пуаро впервые предоставлена возможность продемонстрировать свои дедуктивные способности и раскрыть загадочное преступление (отравление миссис Инглторп, хозяйки поместья Стайлз), опираясь на всем известные факты.
+                    </p>
+                </div>
+                
+            </div>
+ 
+            <script>
+                function openOverlay1() {
+                    document.getElementById("overlay-1").style.display = "flex";
+                }
+            
+                function closeOverlay1() {
+                    document.getElementById("overlay-1").style.display = "none";
+                }
+            </script>
+
+
+
+            <div class="book" onclick="openOverlay2()">
+                <img src="images/таинственый проивник.jpg" class="for_cursor">
+                <p>Таинственный противник (1922)</p>
+            </div>
+
+            <div id="overlay-2" class="overlay">
+
+                <div class="annotation">
+                    <span class="close" onclick="closeOverlay2()">&times;</span>
+                    <p>
+                        Томми Бepecфорд и Таппенс Коули – настоящая сладкая парочка. Но есть одна проблема: у них нет ни денег, ни работы, и они всегда на мели. Тогда в их головы приходит идея открыть собственное предприятие "Молодые авантюристы лтд.", ибо мошенничать получается у них лучше всего. Первый заказ был от некоего мистера Виттингтона. Таппенс решает скрыть свое настоящее имя и представляется именем, которое подслушала в разговоре Виттингтона с другим человеком. И вдруг заказчик меняется в лице, поспешно уходит, почему-то отдав Таппенс большую сумму денег, а вскоре бесследно исчезает. Заинтригованные Бересфорд и Коули желают узнать, кто же этот Виттингтон и почему он так боится имени Джейн Финн… 
+                    </p>
+                    
+                    </div>
+                
+            </div>
+
+
+            <script>
+                function openOverlay2() {
+                    document.getElementById("overlay-2").style.display = "flex";
+                }
+            
+                function closeOverlay2() {
+                    document.getElementById("overlay-2").style.display = "none";
+                }
+            </script>
+
+
+            <div class="book" onclick="openOverlay3()">
+                <img src="images/убийство на поле.jpg" class="for_cursor">
+                <p>Убийство на поле для гольфа (1923)</p>
+            </div>
+
+            <div id="overlay-3" class="overlay">
+
+                <div class="annotation">
+                    <span class="close" onclick="closeOverlay3()">&times;</span>
+                    <p>
+                        Эркюль Пуаро получает письмо от южноамериканского миллионера с просьбой о помощи. Но Пуаро и Гастингс не успевают спасти несчастного месье Рено - его труп находят на поле для гольфа. Пуаро вынужден погрузиться в запутанную цепь событий, происходивших задолго до расследования, чтобы выйти на убийцу миллионера.
+                    </p>
+                </div>
+                
+            </div>
+
+
+            <script>
+                function openOverlay3() {
+                    document.getElementById("overlay-3").style.display = "flex";
+                }
+            
+                function closeOverlay3() {
+                    document.getElementById("overlay-3").style.display = "none";
+                }
+            </script>
+
+
+            <div class="book" onclick="openOverlay4()">
+                <img src="images/человек в коричневом.jpg" class="for_cursor">
+                <p>Человек в коричневом костюме (1924)</p>
+            </div>
+
+            <div id="overlay-4" class="overlay">
+
+                <div class="annotation">
+                    <span class="close" onclick="closeOverlay4()">&times;</span>
+                    <p>
+                        Две смерти – обыденная и загадочная. Пассажир метро, упавший под колеса поезда и странное убийство туристки в старинном английском замке. Казалось бы, как могут быть связаны между собой столь разные происшествия? Ключ к разгадке тайны – человек в коричневом костюме!
+                    </p>
+                </div>
+                
+            </div>
+
+
+            <script>
+                function openOverlay4() {
+                    document.getElementById("overlay-4").style.display = "flex";
+                }
+            
+                function closeOverlay4() {
+                    document.getElementById("overlay-4").style.display = "none";
+                }
+            </script>
+
+
+            <div class="book" onclick="openOverlay5()">
+                <img src="images/тайна замка.jpg" class="for_cursor">
+                <p>Тайна замка Чайниз (1925)</p>
+            </div>
+
+            <div id="overlay-5" class="overlay">
+
+                <div class="annotation">
+                    <span class="close" onclick="closeOverlay5()">&times;</span>
+                    <p>
+                        Энтони Кейд вряд ли мог ожидать, что обычное поручение друга доставить рукопись по назначению швырнет его прямо в сердце международного заговора. Действительно ли так важны мемуары графа Стилптича? И кто скрывается под именем "короля Виктора"? Видимо, все это очень и впрямь важно – ибо за всей этой историей немедленно потянулся жуткий шлейф преступлений. Убийство, шантаж, украденные письма, пропажа знаменитого драгоценного камня, коварные замыслы тайной организации… Все ниточки ведут в Чимниз, один из старинных британских замков, где полицию ожидает ошеломляющая разгадка…
+                    </p>
+                </div>
+                
+            </div>
+
+
+            <script>
+                function openOverlay5() {
+                    document.getElementById("overlay-5").style.display = "flex";
+                }
+            
+                function closeOverlay5() {
+                    document.getElementById("overlay-5").style.display = "none";
+                }
+            </script>
+
+            
+            <div class="book" onclick="openOverlay6()">
+                <img src="images/убийство роджера.jpg" class="for_cursor">
+                <p>Убийство Роджера Экройда (1926)</p>
+            </div>
+
+            <div id="overlay-6" class="overlay">
+
+                <div class="annotation">
+                    <span class="close" onclick="closeOverlay6()">&times;</span>
+                    <p>
+                        Поначалу убийство эсквайра Роджера Экройда не казалось полиции загадочным – все указывало на виновность пасынка убитого. Но иначе считает Эркюль Пуаро, который недавно переехал в эти места, в очередной раз решив уйти на покой. Его попросила помочь племянница Экройда, которая не верит в виновность молодого человека. И Эркюль Пуаро начинает расследование, имея вокруг множество подозреваемых – родственников и знакомых эсквайра, каждый из которых был заинтересован в его смерти. Повествование ведется от имени доктора Шеппарда, последнего, кто видел Экройда живым. С помощью его записей Пуаро предстоит вычислить хитроумного преступника...
+                    </p>
+                </div>
+                
+            </div>
+
+
+            <script>
+                function openOverlay6() {
+                    document.getElementById("overlay-6").style.display = "flex";
+                }
+            
+                function closeOverlay6() {
+                    document.getElementById("overlay-6").style.display = "none";
+                }
+            </script>
+
+
+            <div class="book">
+                <img src="images/большая четверка.jpg">
+                <p>Большая четверка (1927)</p>
+            </div>
+            <div class="book">
+                <img src="images/Тайна голубого поезда.jpg">
+                <p>Тайна "Голубого поезда" (1928)</p>
+            </div>
+            <div class="book">
+                <img src="images/партнеры.jpg">
+                <p>Партенры по преступлению (1929)</p>
+            </div>
+            <div class="book">
+                <img src="images/тайна семи.jpg">
+                <p>Тайна семи циферблатов (1929)</p>
+            </div>
+            <div class="book">
+                <img src="images/убийство в доме.jpg">
+                <p>Убийство в доме викария (1930)</p>
+            </div>
+            <div class="book">
+                <img src="images/кин.jpg">
+                <p>Тайинственный мистер Кин (1930)</p>
+            </div>
+            <div class="book">
+                <img src="images/Загадка Ситтафорда.jpg">
+                <p>Загадка Ситтафорда (1931)</p>
+            </div>
+            <div class="book">
+                <img src="images/Загадка Эндхауза.jpg">
+                <p>Загадка Эндхауза (1932)</p>
+            </div>
+            <div class="book">
+                <img src="images/Смерть лорда.jpg">
+                <p>Смерть лорда Эджвера (1933)</p>
+            </div>
+            <div class="book">
+                <img src="images/Тринадцать загадочных случаев.jpg">
+                <p>Тринадцать загадочных случаев (1933)</p>
+            </div>
+            <div class="book">
+                <img src="images/Убийство в Восточном.jpg">
+                <p>Убийство в "Восточном экспрессе" (1934)</p>
+            </div>
+            <div class="book">
+                <img src="images/паркер.jpg">
+                <p>Расследует Паркер Пайн (1934)</p>
+            </div>
+            <div class="book">
+                <img src="images/трагедия в трех.jpg">
+                <p>Трагедия в трех актах (1935)</p>
+            </div>
+            <div class="book">
+                <img src="images/эванс.jpg">
+                <p>Почему не Эванс? (1935)</p>
+            </div>
+            <div class="book">
+                <img src="images/Смерть в облаках.jpg">
+                <p>Смерть в облаках (1935)</p>
+            </div>
+            <div class="book">
+                <img src="images/Убийства по алфавиту.jpg">
+                <p>Убийства по алфавиту (1936)</p>
+            </div>
+            <div class="book">
+                <img src="images/Убийства в месопотамии.jpg">
+                <p>Убийства в Месопотамии (1936)</p>
+            </div>
+            <div class="book">
+                <img src="images/карты на столе.jpg">
+                <p>Карты на столе (1936)</p>
+            </div>
+            <div class="book">
+                <img src="images/Немой свидетель.jpg">
+                <p>Немой свидетель (1937)</p>
+            </div>
+            <div class="book">
+                <img src="images/Смерть на Ниле.jpg">
+                <p>Смерть на Ниле (1937)</p>
+            </div>
+            <div class="book">
+                <img src="images/Свидание со смертью.jpg">
+                <p>Свидание со смертью (1938)</p>
+            </div>
+            <div class="book">
+                <img src="images/Десять негритят.jpg">
+                <p>Десять негритят (1939)</p>
+            </div>
+            <div class="book">
+                <img src="images/Убить легко.jpg">
+                <p>Убить легко (1939)</p>
+            </div>
+            <div class="book">
+                <img src="images/рождество.jpg">
+                <p>Рождество Эркюля Пуаро (1939)</p>
+            </div>
+            <div class="book">
+                <img src="images/Печальный кипарис.jpg">
+                <p>Печальный кипарис (1940)</p>
+            </div>
+            <div class="book">
+                <img src="images/Зло под солнцем.jpg">
+                <p>Зло под солнцем (1941)</p>
+            </div>
+            <div class="book">
+                <img src="images/икс или.jpg">
+                <p>Икс или Игрек (1941)</p>
+            </div>
+            <div class="book">
+                <img src="images/Раз, два.jpg">
+                <p>Раз, два - пряжку застегни (1941)</p>
+            </div>
+            <div class="book">
+                <img src="images/Труп в библиотеке.jpg">
+                <p>Труп в библиотеке (1942)</p>
+            </div>
+            <div class="book">
+                <img src="images/Пять поросят.jpg">
+                <p>Пять поросят (1942)</p>
+            </div>
+            <div class="book">
+                <img src="images/Каникулы в Лимстоке.jpg">
+                <p>Каникулы в Лимстоке (1942)</p>
+            </div>
+            
+            <div class="book">
+                <img src="images/час ноль.jpg">
+                <p>Час ноль (1944)</p>
+            </div>
+            <div class="book">
+                <img src="images/По направлению к нулю.jpg">
+                <p>По направлению к нулю (1944)</p>
+            </div>
+            <div class="book">
+                <img src="images/цианид.jpg">
+                <p>Сверкающий цианид (1944)</p>
+            </div>
+            <div class="book">
+                <img src="images/смерть приходит.jpg">
+                <p>Смерть приходит в конце (1945)</p>
+            </div>
+            <div class="book">
+                <img src="images/лощина.jpg">
+                <p>Лощина (1946)</p>
+            </div>
+            <div class="book">
+                <img src="images/геракл.jpg">
+                <p>Подвиги Геракла (1947)</p>
+            </div>
+            <div class="book">
+                <img src="images/берег удачи.jpg">
+                <p>Берег удачи (1948)</p>
+            </div>
+
+            <div class="book">
+                <img src="images/объявлено.jpg">
+                <p>Объявлено убийство (1950)</p>
+            </div>
+            <div class="book">
+                <img src="images/три слепых.jpg">
+                <p>Три слепых мышонка (1950)</p>
+            </div>
+            <div class="book">
+                <img src="images/багдадские.jpg">
+                <p>Багдадские встречи (1951)</p>
+            </div>
+           
+            <div class="book">
+                <img src="images/миссис.jpg">
+                <p>Миссис Макгинти с жизнью рассталась (1952)</p>
+            </div>
+            <div class="book">
+                <img src="images/с помощью зеркал.jpg">
+                <p>С помощью зеркал (1952)</p>
+            </div>
+            <div class="book">
+                <img src="images/карман.jpg">
+                <p>Карман, полный ржи (1953)</p>
+            </div>
+            <div class="book">
+                <img src="images/после похорон.jpg">
+                <p>После похорон (1953)</p>
+            </div>
+            <div class="book">
+                <img src="images/хикори.jpg">
+                <p>Хикори Дикори Док (1955)</p>
+            </div>
+            <div class="book">
+                <img src="images/место назначения.jpeg">
+                <p>Место назначения неизвестно (1955)</p>
+            </div>
+            <div class="book">
+                <img src="images/глупость.jpg">
+                <p>Глупость мертвеца (1956)</p>
+            </div>
+            <div class="book">
+                <img src="images/4-50.jpg">
+                <p>В 4:50 из Паддингтона (1957)</p>
+            </div>
+            <div class="book">
+                <img src="images/испытание.jpg">
+                <p>Испытание невинностью (1957)</p>
+            </div>
+            <div class="book">
+                <img src="images/кошка.jpg">
+                <p>Кошка среди голубей (1959)</p>
+            </div>
+            <div class="book">
+                <img src="images/вилла.jpg">
+                <p>Вилла "Белый конь" (1961)</p>
+            </div>
+           
+            <div class="book">
+                <img src="images/и треснув.jpg">
+                <p>И треснув, зеркало трещит (1962)</p>
+            </div>
+            <div class="book">
+                <img src="images/часы.jpg">
+                <p>Часы (1963)</p>
+            </div>
+            <div class="book">
+                <img src="images/карибская.jpg">
+                <p>Карибская тайна (1964)</p>
+            </div>
+            <div class="book">
+                <img src="images/отель.jpg">
+                <p>Отель "Бертрам" (1965)</p>
+            </div>
+            <div class="book">
+                <img src="images/третья.jpg">
+                <p>Третья девушка (1966)</p>
+            </div>
+            <div class="book">
+                <img src="images/ночь.jpg">
+                <p>Бесконечная ночь (1967)</p>
+            </div>
+            <div class="book">
+                <img src="images/щелкни.jpg">
+                <p>Щелкни пальцем только раз (1968)</p>
+            </div>
+            <div class="book">
+                <img src="images/вечеринка.jpg">
+                <p>Вечеринка в Хеллоуин (1969)</p>
+            </div>
+            <div class="book">
+                <img src="images/пассажир.jpg">
+                <p>Пассажир из Франкфурта (1970)</p>
+            </div>
+            <div class="book">
+                <img src="images/немезида.jpg">
+                <p>Немезида (1971)</p>
+            </div>
+            
+            <div class="book">
+                <img src="images/слоны.jpg">
+                <p>Слоны умеют помнить (1972)</p>
+            </div>
+            <div class="book">
+                <img src="images/врата.jpg">
+                <p>Врата судьбы (1973)</p>
+            </div>
+            <div class="book">
+                <img src="images/занавес.jpg">
+                <p>Занавес (1975)</p>
+            </div>
+            <div class="book">
+                <img src="images/спящее.jpg">
+                <p>Спящее убийство (1976)</p>
+            </div>
+        </div>
+
+
+        <h2 id="collections">Сборники рассказов</h2>
+        <div class="main_div">
+            <div class="book">
+                <img src="images/Пуаро ведет следствие.jpg">
+                <p>Пуаро ведет следствие (1924)</p>
+            </div>
+            <div class="book">
+                <img src="images/Гончая смерти.jpg">
+                <p>Гончая смерти (1933)</p>
+            </div>
+            <div class="book">
+                <img src="images/загадка листердейла.jpg">
+                <p>Загадка Листредейла (1934)</p>
+            </div>
+            <div class="book">
+                <img src="images/Убийство в проходном дворе.jpg">
+                <p>Убийство в проходном дворе (1937)</p>
+            </div>
+            <div class="book">
+                <img src="images/Приключения рождественского пудинга.jpg">
+                <p>Приключения рождественского пудинга (1960)</p>
+            </div>
+            <div class="book">
+                <img src="images/золотой мяч.jpg">
+                <p>Золотой мяч и другие рассказы (1971)</p>
+            </div>
+            <div class="book">
+                <img src="images/Ранние дела Пуаро.jpg">
+                <p>Ранние дела Пуаро (1974)</p>
+            </div>
+            <div class="book">
+                <img src="images/последние.jpg">
+                <p>Последние дела мисс Марпл (1979)</p>
+            </div>
+            <div class="book">
+                <img src="images/хлопоты.jpg">
+                <p>Хлопоты в Польенсе (1991)</p>
+            </div>
+            <div class="book">
+                <img src="images/Доколе длится свет.jpg">
+                <p>Доколе длится свет (1997)</p>
+            </div>
+            
+        </div>
+    </main> 
+    
+    <div id="up_button" onclick="topFunction()">
+        <img src="images/наверх_1.png">
+    </div>   
+</body>
+</html>

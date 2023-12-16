@@ -1,0 +1,91 @@
+@font-face { 
+    font-family: "LatoRegular";
+    src: url("../Fonts/LatoRegular/LatoRegular.ttf") ;
+}
+
+@font-face { 
+    font-family: "LatoLight";
+    src: url("../fonts/LatoLight/LatoLight.ttf") ;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0px;  
+}
+
+header {
+    width: 100%;
+    /* background-color: black; */
+    color: white;
+}
+
+header hr {
+    border: none; 
+  background-color: #B00202; 
+  height: 1px;
+  width: 90%;
+  margin: 20px 5% 0 5%;
+  opacity: 0.8;
+}
+
+#navbar {
+    display: flex;
+    margin-top: 1%;
+}
+
+
+#navbar ul {
+    margin-right: 150px;
+}
+
+#navbar ul li{
+    /* border: 1px solid white; */
+    display: inline;
+    margin: 0 25px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'LatoLight';
+    
+}
+
+#navbar ul li a:hover{
+    color: #B00202;
+    
+}
+
+
+#navbar #logo {
+    width: 3%;
+    margin-left: 180px;
+    /* border: 1px solid; */
+}
+
+#navbar #logo img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+
+#up_button {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    bottom: 50px;
+  
+    cursor: pointer;
+  
+  }
+  
+  #up_button img{
+    width: 100%;
+  }

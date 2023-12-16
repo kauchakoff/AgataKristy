@@ -1,0 +1,185 @@
+@import url('https://fonts.cdnfonts.com/css/first-reign-personal-use-only');
+
+
+@font-face { 
+  font-family: "LatoRegular";
+  src: url("../Fonts/LatoRegular/LatoRegular.ttf") ;
+}
+
+@font-face { 
+  font-family: "LatoLight";
+  src: url("../fonts/LatoLight/LatoLight.ttf") ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0px;  
+}
+
+header {
+  width: 100%;
+  /* background-color: black; */
+}
+
+header hr {
+  border: none; 
+  background-color: #B00202; 
+  height: 1px;
+  width: 90%;
+  margin: 20px 5% 0 5%;
+  opacity: 0.8;
+}
+
+#navbar {
+  display: flex;
+  margin-top: 1%;
+}
+
+
+#navbar ul {
+  margin-right: 150px;
+}
+
+#navbar ul li{
+  /* border: 1px solid white; */
+  display: inline;
+  margin: 0 25px;
+}
+
+#navbar ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: 'LatoLight';
+  
+}
+
+#navbar ul li a:hover{
+  color: #B00202;
+  
+}
+
+
+#navbar #logo {
+  width: 3%;
+  margin-left: 180px;
+  /* border: 1px solid; */
+}
+
+#navbar #logo img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: normal;
+  font-family: 'First Reign PERSONAL USE ONLY', sans-serif;
+}
+
+#content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+#content div{
+  width: 50%;
+}
+
+#content #text_content  {   
+  width: 30%;
+  margin-left: 10%;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);; 
+}
+
+#content #text_content ul li {
+  list-style-type:none;
+  margin-top: 10px;
+
+}
+
+#content #text_content ul li a  {
+  text-decoration: none;
+  color: white;
+  font-family: 'LatoRegular';
+  font-size: 16px;
+  margin-left: 2%;
+}
+
+#content #text_content ul li a:hover {
+  color: #B00202;
+}
+
+#content #text_content h3  {
+  font-family: 'LatoRegular';
+  font-size: 25px;
+  color: #B00202;
+  margin: 8% 0 0 10%;
+  /* margin-left: 80%; */
+
+}
+
+#content div img {
+  width: 80%;
+}
+
+main #main_inf {
+  width: 50%;
+  margin: 0 25%;
+  font-family: 'Lato';
+}
+
+#main_inf p {
+  font-size: 16px;
+}
+
+#main_inf h2 {
+  /* margin-top: 50px; */
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.lato_bold {                                                   
+  font-weight: bold;
+}
+
+
+.lato_light {
+  font-weight: lighter;
+}
+
+#date {
+  padding:5px 0 15px 15px;
+  width: 30%;
+  white-space: nowrap;  
+  /* Запрет переноса */
+  border-left: 0.5px solid;
+  border-bottom: 0.5px solid;
+}
+
+
+#up_button {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 50px;
+  bottom: 50px;
+
+  cursor: pointer;
+
+}
+
+#up_button img{
+  width: 100%;
+}

@@ -1,0 +1,189 @@
+@import url('https://fonts.cdnfonts.com/css/first-reign-personal-use-only');
+
+@font-face { 
+    font-family: "LatoRegular";
+    src: url("../Fonts/LatoRegular/LatoRegular.ttf") ;
+}
+
+@font-face { 
+    font-family: "LatoLight";
+    src: url("../fonts/LatoLight/LatoLight.ttf") ;
+}
+
+@font-face {
+    font-family: "LatoBold";
+    src: url("../Fonts/LatoBold/LatoBold.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0px;  
+}
+
+header {
+    width: 100%;
+    /* background-color: black; */
+    color: white;
+}
+
+header hr {
+    border: none; 
+  background-color: #B00202; 
+  height: 1px;
+  width: 90%;
+  margin: 20px 5% 0 5%;
+  opacity: 0.8;
+}
+
+#navbar {
+    display: flex;
+    margin-top: 1%;
+}
+
+
+#navbar ul {
+    margin-right: 150px;
+}
+
+#navbar ul li{
+    /* border: 1px solid white; */
+    display: inline;
+    margin: 0 25px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'LatoLight';
+    
+}
+
+#navbar ul li a:hover{
+    color: #B00202;
+    
+}
+
+
+#navbar #logo {
+    width: 3%;
+    margin-left: 180px;
+    /* border: 1px solid; */
+}
+
+#navbar #logo img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'First Reign PERSONAL USE ONLY', sans-serif;
+    font-weight: normal;
+}
+
+.card_of_film {
+    display: flex;
+    /* margin: 0 4%; */
+    margin: 0 60px;
+}
+
+.card_of_film .for_img {
+    width: 42%;
+    
+}
+
+.card_of_film .description {
+    width: 40%;
+}
+
+.card_of_film img {
+    width: 280px;
+    margin: 0 250px;
+}
+
+.card_of_film .description p, .plot {
+    font-family: 'LatoLight';
+}
+
+.card_of_film .description h2 {
+    color: #B00202;
+    font-family: 'LatoRegular'; 
+}
+ 
+main hr {
+    border: none; 
+    background-color: white; 
+    height: 1px;
+    width: 80%;
+    margin:  5% 10%;
+    opacity: 0.5;
+}
+
+span.for_bold {
+    font-family: 'LatoBold';
+}
+  
+
+.plot {
+    position: relative;
+}
+
+.plot details, .plot summary {
+    display: inline;
+}
+
+.plot details[open] {
+    display: contents;
+}
+
+.plot details[open]::after {  /* пространство для записи "СВЕРНУТЬ" */
+    display: block;  
+    content: "\00a0";
+}
+
+.plot summary {
+    color: gray;
+    cursor: pointer;
+    /* margin-left: 10px; */
+}
+
+.plot details[open] summary {
+    position: absolute;  /* переместить запись "СВЕРНУТЬ" вниз <div> */
+    bottom: 0;
+    left: 0;
+}
+
+.plot summary::before {
+    content: "еще";
+}
+
+.plot details[open] summary::before {
+    content: "свернуть";
+}
+
+.plot  details summary::-webkit-details-marker {
+    display: none;
+}
+
+#up_button {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    bottom: 50px;
+  
+    cursor: pointer;
+  
+  }
+  
+  #up_button img{
+    width: 100%;
+  }

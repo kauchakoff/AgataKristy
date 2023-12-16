@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="Style/test.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+            <div>
+                <ul>
+                    <li><a href="bio.html">Биография</a></li>
+                    <li><a href="books.html">Произведения</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="films.html">Экранизации</a></li>
+                    <li><a href="quotes.html">Цитаты</a></li>
+                    <li><a href="facts.html">Интересные факты</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="sources.html">Источники</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <h1>Тест</h1>
+        <h2>Насколько хорошо вы знаете Агату Кристи?</h2>
+        <hr>
+
+        <form id="quizForm">
+
+            <div class="question-container">
+
+                <div class="question" id="question1">
+                    <h3>1 вопрос</h3>
+                    <p>Какая девичья фамилия была у Агаты Кристи?</p>
+
+                    <div class="answers" id="answers1">
+                        <label class="answer" onclick="checkAnswer(1, 2)"><input type="radio" name="q1" value="1"> Джонс</label>
+                        <label class="answer" onclick="checkAnswer(1, 2)"><input type="radio" name="q1" value="2"> Миллер</label>
+                        <label class="answer" onclick="checkAnswer(1, 2)"><input type="radio" name="q1" value="3"> Браун</label>
+                        <label class="answer" onclick="checkAnswer(1, 2)"><input type="radio" name="q1" value="4"> Дэвис</label>
+                    </div>
+                </div>
+                
+                <div class="question" id="question2">
+                    <h3>2 вопрос</h3>
+                    <p>Сколько раз писательница была замужем?</p>
+                    <div class="answers" id="answers2">
+                        <label class="answer" onclick="checkAnswer(2, 3)"><input type="radio" name="q2" value="1"> 0</label>
+                        <label class="answer" onclick="checkAnswer(2, 3)"><input type="radio" name="q2" value="2"> 1</label>
+                        <label class="answer" onclick="checkAnswer(2, 3)"><input type="radio" name="q2" value="3"> 2</label>
+                        <label class="answer" onclick="checkAnswer(2, 3)"><input type="radio" name="q2" value="4"> 3</label>
+                    </div>
+                </div>
+            
+                <div class="question" id="question3">
+                    <h3>3 вопрос</h3>
+                    <p>Как называется самый первый роман Агаты Кристи?</p>
+                    <div class="answers" id="answers3">
+                        <label class="answer" onclick="checkAnswer(3, 1)"><input type="radio" name="q3" value="1"> Загадочное происшествие в Стайлзе</label>
+                        <label class="answer" onclick="checkAnswer(3, 1)"><input type="radio" name="q3" value="2"> Десять негритят</label>
+                        <label class="answer" onclick="checkAnswer(3, 1)"><input type="radio" name="q3" value="3"> Убийство Роджера Экройда</label>
+                        <label class="answer" onclick="checkAnswer(3, 1)"><input type="radio" name="q3" value="4"> Вечеринка в Хеллоуин</label>
+                    </div>
+                </div>
+            
+                <div class="question" id="question4">
+                    <h3>4 вопрос</h3>
+                    <p>Какое расстройство было у Агаты?</p>
+                    <div class="answers" id="answers4">
+                        <label class="answer" onclick="checkAnswer(4, 3)"><input type="radio" name="q4" value="1"> Анорексия</label>
+                        <label class="answer" onclick="checkAnswer(4, 3)"><input type="radio" name="q4" value="2"> Социофобия</label>
+                        <label class="answer" onclick="checkAnswer(4, 3)"><input type="radio" name="q4" value="3"> Дисграфия</label>
+                        <label class="answer" onclick="checkAnswer(4, 3)"><input type="radio" name="q4" value="4"> Бессонница</label>
+                    </div>
+                    </div>
+            
+                <div class="question" id="question5">
+                    <h3>5 вопрос</h3>
+                    <p>Кто был прообразом для персонажа Мисс Марпл?</p>
+                    <div class="answers" id="answers5">
+                        <label class="answer" onclick="checkAnswer(5, 2)"><input type="radio" name="q5" value="1"> Мама Агаты</label>
+                        <label class="answer" onclick="checkAnswer(5, 2)"><input type="radio" name="q5" value="2"> Бабушка Агаты</label>
+                        <label class="answer" onclick="checkAnswer(5, 2)"><input type="radio" name="q5" value="3"> Сестра Агаты</label>
+                        <label class="answer" onclick="checkAnswer(5, 2)"><input type="radio" name="q5" value="4"> Соседка Агаты</label>
+                    </div>
+                    </div>
+            
+                <div class="question" id="question6">
+                    <h3>6 вопрос</h3>
+                    <p>Что является непременным атрибутом Эрклюля Пуаро - <br> самого известного персонажа книг Агаты Кристи?</p>
+                    <div class="answers" id="answers6">
+                        <label class="answer" onclick="checkAnswer(6, 4)"><input type="radio" name="q6" value="1"> Очки</label>
+                        <label class="answer" onclick="checkAnswer(6, 4)"><input type="radio" name="q6" value="2"> Шляпа</label>
+                        <label class="answer" onclick="checkAnswer(6, 4)"><input type="radio" name="q6" value="3"> Галстук</label>
+                        <label class="answer" onclick="checkAnswer(6, 4)"><input type="radio" name="q6" value="4"> Усы</label>
+                    </div>
+                </div>
+        
+        
+                <button type="button" onclick="nextQuestion()">Далее &#10142;</button>
+
+                <p id="result"></p>
+            </div>
+        </form>
+        
+        <hr>
+
+        <script>
+            let currentQuestion = 1;
+            let correctAnswers = 0;
+            let answered = false; //было ли нажато до этого на любой label или нет
+        
+            function checkAnswer(questionNumber, correctAnswer) {
+                if (answered == true) {
+                    return; // Если уже нажали, останавливается
+                }
+            
+
+                const selectedAnswer = document.querySelector(`input[name="q${questionNumber}"]:checked`);
+
+                if (!selectedAnswer) {
+                    return; // если не нашли тег input у которого name q..
+                }
+            
+                if (selectedAnswer.value == correctAnswer) {
+
+                    correctAnswers++;
+
+                    // background-image: url("../images/yes.png");
+
+                    selectedAnswer.parentNode.style.backgroundImage = "url('images/yes.png')"; // белый цвет для правильного ответа
+                    selectedAnswer.parentNode.style.color = 'black';
+                    selectedAnswer.parentNode.classList.add('right');
+
+                    // selectedAnswer.parentNode.style.animated = ''
+
+                } else {
+                    selectedAnswer.parentNode.style.backgroundImage = "url('images/no.png')"; // Красный цвет для неправильного ответа
+                    selectedAnswer.parentNode.style.color = 'black';
+                    selectedAnswer.parentNode.classList.add('wrong');
+                }
+
+                answered = true;
+
+            }
+        
+            function nextQuestion() {
+                answered = false; // Разрешить выбор нового ответа для следующего вопроса
+            
+                const BlockCurrentQuestion = document.getElementById(`question${currentQuestion}`);
+
+                BlockCurrentQuestion.style.display = "none";
+            
+                currentQuestion++;
+
+                const BlockNextQuestion = document.getElementById(`question${currentQuestion}`);
+
+                if (BlockNextQuestion) {
+                    BlockNextQuestion.style.display = "block";
+
+                } else {                    // Если вопросов больше нет, вывести результат
+
+                    if (correctAnswers <= 2) {
+                        document.getElementById("result").innerText = `Количество правильных ответов: ${correctAnswers}. Кажется, вам стоит внимательнее почитать информацию на этом сайте :) Удачи в следующей попыытке!`;
+                    }
+
+                    else if (correctAnswers >=5){
+                        document.getElementById("result").innerText = `Количество правильных ответов: ${correctAnswers}. Отлично! Ваши знания об Агате Кристи на высшем уровне.`;
+                    }
+
+                    else {
+                        document.getElementById("result").innerText = `Количество правильных ответов: ${correctAnswers}. Хорошо! Вы неплохо справились с вопросами. На нашем сайте вы можете пополнить свои знания о писательнице.`;
+                    }
+
+                    document.querySelector('button').style.display = 'none';
+                }
+            }
+        </script>
+    </main>
+
+    <div id="up_button" onclick="topFunction()">
+        <img src="images/наверх_1.png">
+    </div>
+</body>
+</html>
